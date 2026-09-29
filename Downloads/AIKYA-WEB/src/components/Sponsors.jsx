@@ -1,45 +1,45 @@
+import logo1 from '../assets/phoenix.jpeg'
+import logo2 from '../assets/engineering-scoops.png'
+import logo3 from '../assets/student-tribe.jpeg'
+
 function Sponsors() {
   const sponsorTiers = [
     {
       id: "title",
       category: "TITLE SPONSOR",
-      code: "TIER-01 // ALLIANCE PATRON",
-      name: "GALACTIC SEMICONDUCTOR LABS",
-      tagline: "Advancing Silicon Frontier Research",
+      code: "TITLE SPONSOR",
+      name: "PHOENIX OVERSEAS",
+      tagline: "edu and consultancy",
+      logo: logo1,
+      monogram: "PO",
       tierClass: "tier-title",
       accent: "#E5092F",
       featured: true,
     },
     {
       id: "tech",
-      category: "TECHNOLOGY PARTNER",
-      code: "TIER-02 // CORE INFRASTRUCTURE",
-      name: "NEXUS EMBEDDED SYSTEMS",
-      tagline: "Next-Gen RISC-V & Edge AI Compute",
+      category: "CO-SPONSOR",
+      code:"CO-SPONSOR",
+      name: "ENGINEERING SCCOPS",
+      tagline: "engineering scoops",
+      logo: logo2,
+      monogram: "ES",
       tierClass: "tier-tech",
       accent: "#28A9FF",
       featured: false,
     },
     {
       id: "innovation",
-      category: "INNOVATION PARTNER",
-      code: "TIER-03 // VENTURE & INCUBATION",
-      name: "ORBITAL DYNAMICS CORP",
-      tagline: "Aerospace Avionics & Satellite Comms",
+      category: "OUTREACH-PARTNER",
+      code: "OUTREACH PARTNER",
+      name: "STUDENT TRIBE",
+      tagline: "student tribe",
+      logo: logo3,
+      monogram: "ST",
       tierClass: "tier-innovation",
       accent: "#F2C14E",
       featured: false,
-    },
-    {
-      id: "event",
-      category: "EVENT PARTNER",
-      code: "TIER-04 // PROTOCOL SUPPORTER",
-      name: "SYNAPSE ROBOTICS ALLIANCE",
-      tagline: "Autonomous Mechatronics & Sensors",
-      tierClass: "tier-event",
-      accent: "#9CA3AF",
-      featured: false,
-    },
+    }
   ];
 
   return (
@@ -68,6 +68,7 @@ function Sponsors() {
               className={`sponsor-card ${tier.tierClass} ${
                 tier.featured ? "is-featured-sponsor" : ""
               }`}
+              style={{ "--sponsor-accent": tier.accent }}
             >
               {/* Corner brackets */}
               <div className="sponsor-bracket tl"></div>
@@ -80,17 +81,23 @@ function Sponsors() {
                 <span className="sponsor-code">{tier.code}</span>
               </div>
 
-              {/* High-tech Emblem / Logo Box */}
               <div className="sponsor-logo-box">
-                <div className="sponsor-pcb-backdrop"></div>
-                <div className="sponsor-emblem-graphic">
-                  <div className="emblem-hex">
-                    <span className="emblem-core-dot"></span>
-                    <span className="emblem-pulse-ring"></span>
-                  </div>
+                <div className={`sponsor-logo-stage ${tier.logo ? "has-logo" : "is-placeholder"}`}>
+                  {tier.logo ? (
+                    <img
+                      className="sponsor-logo-image"
+                      src={tier.logo}
+                      alt={`${tier.name} logo`}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span className="sponsor-logo-monogram" aria-hidden="true">
+                      {tier.monogram}
+                    </span>
+                  )}
                 </div>
                 <h3 className="sponsor-brand-name">{tier.name}</h3>
-                <p className="sponsor-tagline">{tier.tagline}</p>
+                {tier.tagline && <p className="sponsor-tagline">{tier.tagline}</p>}
               </div>
 
               <div className="sponsor-card-footer">
@@ -104,19 +111,7 @@ function Sponsors() {
           ))}
         </div>
 
-        {/* Call for Sponsorship */}
-        <div className="sponsorship-inquiry-box">
-          <div className="inquiry-text">
-            <strong>INTERESTED IN PARTNERING FOR AIKYA 2026?</strong>
-            <p>Connect with the ECE faculty conveners and sponsorship leads.</p>
-          </div>
-          <a
-            href="mailto:ietevvitu@vvit.net?subject=AIKYA%202026%20Sponsorship%20Inquiry"
-            className="inquiry-btn"
-          >
-            REQUEST PARTNERSHIP PROSPECTUS →
-          </a>
-        </div>
+        
       </div>
     </section>
   );

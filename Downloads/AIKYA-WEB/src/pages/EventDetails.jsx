@@ -12,6 +12,7 @@ function EventDetails() {
   if (!event) {
     return (
       <div className="page-shell event-error-shell">
+        
         <Navbar />
 
         <main className="event-not-found-main">
@@ -105,14 +106,18 @@ function EventDetails() {
                 </p>
               </div>
 
-              {/* Number callout */}
-              <div className="dossier-number-block">
-                <div className="tech-number-frame">
-                  <span className="number-label">MISSION CODE</span>
-                  <span className="number-value">#{formattedNumber}</span>
-                  <span className="number-sub">SECTOR ECE</span>
-                </div>
-              </div>
+              <figure className={`event-image-card ${isMajor ? "" : "minor-event-image-card"}`}>
+                <img
+                  src={event.image}
+                  alt={`${event.name} event`}
+                  loading="eager"
+                  decoding="async"
+                />
+                <figcaption className="event-image-caption">
+                  <span>EVENT IMAGE</span>
+                  <strong>MISSION #{formattedNumber}</strong>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>
@@ -151,6 +156,26 @@ function EventDetails() {
                 <span className="spec-label">SQUAD COMPOSITION</span>
                 <strong className="spec-value">{event.teamSize || "1 - 3 Members"}</strong>
                 <span className="spec-sub">INTER-COLLEGE ALLOWED</span>
+              </div>
+
+              <div className="spec-card">
+                <div className="spec-corner tl"></div>
+                <div className="spec-corner tr"></div>
+                <span className="spec-label">STUDENT COORDINATOR</span>
+                <strong className="spec-value">
+                  {event.studentCoordinator || "To be announced"}
+                </strong>
+                {/* <span className="spec-sub">STUDENT CONTACT</span> */}
+              </div>
+
+              <div className="spec-card">
+                <div className="spec-corner tl"></div>
+                <div className="spec-corner tr"></div>
+                <span className="spec-label">FACULTY COORDINATOR</span>
+                <strong className="spec-value">
+                  {event.facultyCoordinator || "To be announced"}
+                </strong>
+                {/* <span className="spec-sub">FACULTY CONTACT</span> */}
               </div>
             </div>
           </div>

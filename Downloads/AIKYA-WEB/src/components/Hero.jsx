@@ -1,8 +1,22 @@
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import vaderImg from "../assets/vader.jpeg";
 
 function Hero() {
+  const [introFinished, setIntroFinished] = useState(false);
+  const prefersReducedMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (prefersReducedMotion) {
+      setIntroFinished(true);
+      return undefined;
+    }
+
+    const introTimer = window.setTimeout(() => setIntroFinished(true), 2600);
+    return () => window.clearTimeout(introTimer);
+  }, [prefersReducedMotion]);
+
   return (
     <section className="hero-section">
       {/* Background Starfield & Atmosphere */}
@@ -13,6 +27,24 @@ function Hero() {
         <div className="atmospheric-nebula blue-nebula"></div>
         <div className="telemetry-grid-overlay"></div>
       </div>
+
+      <motion.div
+        className="hero-vader-intro"
+        initial={{ opacity: 0, y: "100%" }}
+        animate={introFinished ? { opacity: 0, y: "-100%" } : { opacity: 1, y: 0 }}
+        transition={
+          prefersReducedMotion
+            ? { duration: 0.2, y: { duration: 0 } }
+            : {
+                opacity: { duration: introFinished ? 1 : 0.55, ease: "easeInOut" },
+                y: { duration: introFinished ? 1.1 : 1.6, ease: [0.16, 1, 0.3, 1] },
+              }
+        }
+      >
+        <img src={vaderImg} alt="" className="hero-vader-intro-image" />
+        <div className="hero-vader-intro-shade"></div>
+        <p className="hero-vader-intro-title">Welcome to the galaxy</p>
+      </motion.div>
 
       {/* Telemetry Coordinates Header */}
       <div className="hero-telemetry-strip">
@@ -27,33 +59,14 @@ function Hero() {
       </div>
 
       <div className="hero-stage">
-        {/* Darth Vader Silhouette Character (Rises slowly from bottom with cinematic easing) */}
-        <motion.div
-          className="hero-character-wrapper"
-          initial={{ y: "80%", opacity: 0 }}
-          animate={{ y: "0%", opacity: 0.85 }}
-          transition={{
-            duration: 2.4,
-            ease: [0.16, 1, 0.3, 1], // cinematic cubic-bezier
-          }}
-        >
-          <div className="character-glow-underlay"></div>
-          <img
-            src={vaderImg}
-            alt="AIKYA Commander Silhouette"
-            className="hero-character-img"
-          />
-          <div className="character-fade-mask"></div>
-        </motion.div>
-
         {/* AIKYA Title & Fest Content */}
         <motion.div
           className="hero-center-content"
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 24 }}
+          animate={introFinished ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
           transition={{
-            delay: 1.6,
-            duration: 1.4,
+            delay: introFinished && !prefersReducedMotion ? 0.65 : 0,
+            duration: prefersReducedMotion ? 0.3 : 1.1,
             ease: [0.16, 1, 0.3, 1],
           }}
         >
@@ -76,7 +89,7 @@ function Hero() {
           </p>
 
           <div className="hero-brief-summary">
-            14 High-Stakes Technical Missions &bull; Circuitry, DSP, Autonomous Systems & Hardware Innovation
+            12 High-Stakes Technical Missions &bull; Circuitry, Code , Autonomous Systems & Hardware Innovation
           </div>
 
           {/* Call to Actions */}
@@ -94,7 +107,7 @@ function Hero() {
           {/* Quick HUD Metrics */}
           <div className="hero-hud-stats">
             <div className="hud-stat-box">
-              <span className="hud-val">14</span>
+              <span className="hud-val">12</span>
               <span className="hud-label">MISSIONS</span>
             </div>
             <div className="hud-divider"></div>
@@ -102,16 +115,7 @@ function Hero() {
               <span className="hud-val">02</span>
               <span className="hud-label">DAYS</span>
             </div>
-            <div className="hud-divider"></div>
-            <div className="hud-stat-box">
-              <span className="hud-val">50K+</span>
-              <span className="hud-label">PRIZE POOL</span>
-            </div>
-            <div className="hud-divider"></div>
-            <div className="hud-stat-box">
-              <span className="hud-val">500+</span>
-              <span className="hud-label">OPERATIVES</span>
-            </div>
+            
           </div>
         </motion.div>
       </div>

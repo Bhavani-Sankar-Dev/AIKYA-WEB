@@ -111,18 +111,6 @@ function Footer() {
                 <span className="social-name">LINKEDIN</span>
                 <span className="social-arrow">↗</span>
               </a>
-
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-btn"
-                aria-label="GitHub Repository"
-              >
-                <span className="social-tag">GH</span>
-                <span className="social-name">GITHUB</span>
-                <span className="social-arrow">↗</span>
-              </a>
             </div>
           </div>
         </div>
