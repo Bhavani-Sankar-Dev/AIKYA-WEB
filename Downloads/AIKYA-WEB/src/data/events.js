@@ -293,8 +293,8 @@ const events = [
 
   {
     id: "kybercode-duel",
-    studentCoordinator: "",
-    facultyCoordinator: "",
+    studentCoordinator: "G.Vyshali",
+    facultyCoordinator: "Dr.S.Thirumala Devi",
     number: 12,
     name: "KyberCode: Duel Numbers",
     type: "minor",
