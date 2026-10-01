@@ -39,7 +39,7 @@ function Events() {
               </h1>
 
               <p className="events-lead-subtitle">
-                14 high-caliber technical operations across 2 days. From cryptographic
+                12 high-caliber technical operations across 2 days. From cryptographic
                 signal relay to autonomous robotics and deep silicon diagnostics.
               </p>
 
@@ -55,7 +55,7 @@ function Events() {
                 </div>
                 <div className="quick-stat-badge">
                   <span className="stat-code">SECONDARY SULPHUR:</span>
-                  <span className="stat-num">10 MINOR</span>
+                  <span className="stat-num">8 MINOR</span>
                 </div>
               </div>
             </div>

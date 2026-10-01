@@ -36,7 +36,7 @@ function About() {
               <div className="about-hero-tags">
                 <span className="hero-spec-tag">EST. BIENNIAL</span>
                 <span className="hero-spec-tag">ECE DEPARTMENT</span>
-                <span className="hero-spec-tag">14 TOURNAMENTS</span>
+                <span className="hero-spec-tag">12 TOURNAMENTS</span>
                 <span className="hero-spec-tag">NATIONAL REACH</span>
               </div>
             </div>
@@ -82,7 +82,7 @@ function About() {
                     <span className="p-stat-lbl">Institutions Represented</span>
                   </div>
                   <div className="pillar-stat-box">
-                    <span className="p-stat-val">₹50K+</span>
+                    <span className="p-stat-val">Amazing+</span>
                     <span className="p-stat-lbl">Prize Matrix</span>
                   </div>
                 </div>

@@ -269,9 +269,14 @@ function EventDetails() {
               </div>
 
               <div className="cta-box-right">
-                <Link to="/registration" className="btn-primary-glow btn-large">
+                <a
+                  href={event.registrationLink}
+                  className="btn-primary-glow btn-large"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span>REGISTER NOW →</span>
-                </Link>
+                </a>
                 <Link to="/events" className="btn-secondary-ghost">
                   VIEW OTHER MISSIONS
                 </Link>

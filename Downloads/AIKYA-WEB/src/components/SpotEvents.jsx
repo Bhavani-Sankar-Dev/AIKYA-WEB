@@ -1,27 +1,29 @@
 
 import { useEffect, useRef, useState } from "react";
-import codeForceImage from "../assets/1.png";
-import holocronImage from "../assets/2.png";
-import krennicImage from "../assets/3.png";
-import circuitForgeImage from "../assets/4.png";
-import canvaImage from "../assets/canva.png";
-import binaryImage from "../assets/binary.png";
-import chessImage from "../assets/chess.png";
-import escapeRoomImage from "../assets/escape-room.png";
-import puzzleImage from "../assets/puzzle.png";
-import rebelsImage from "../assets/rebels.png";
+import basketBallImage from "../assets/Basket Ball Challenge poster.jpg.jpeg";
+import ballonImage from "../assets/5.png"
+import MagenticBattle from "../assets/6.png"
+import cupStackingImage from "../assets/cup-stacking.png";
+import marbleMazeImage from "../assets/Marble Maze landscape event poster.jpg.jpeg";
+import marbleMatchImage from "../assets/marble-match.png";
+import memCupsImage from "../assets/mem-cups.png";
+import numberSequenceImage from "../assets/NUMBER IN SEQUENCE landscape poster.jpg.jpeg";
+import pennyGameImage from "../assets/penny-game.png";
+import slingBattleImage from "../assets/SLING BATTLE landscape poster.jpg.jpeg";
+import ultimateBalanceImage from "../assets/Ultimate Balance Game landscape poster.jpg.jpeg";
 
 const spotEvents = [
-    { id: "krennic-encryption", name: "Krennic Encryption", day: 1, image: krennicImage },
-    { id: "code-force-awaken", name: "Code Force Awaken", day: 1, image: codeForceImage },
-    { id: "canvas-clash", name: "Canvas Clash", day: 1, image: canvaImage },
-    { id: "puzzle-paradox", name: "Puzzle Paradox", day: 1, image: puzzleImage },
-    { id: "rise-of-rebels", name: "Rise of Rebels", day: 1, image: rebelsImage },
-    { id: "binary-breaker", name: "Binary Breaker", day: 1, image: binaryImage },
-    { id: "holocron-hunt", name: "Holocron Hunt", day: 2, image: holocronImage },
-    { id: "galactic-circuit-forge", name: "Galactic Circuit Forge", day: 2, image: circuitForgeImage },
-    { id: "dice-mate", name: "Dice Mate", day: 2, image: chessImage },
-    { id: "tech-treasure", name: "Tech Treasure", day: 2, image: escapeRoomImage },
+    { id: "blow-ballon", name: "Blow The Balloon",  image: ballonImage },
+    { id: "magnetic-battle", name: "Magnetic Battke",  image:  MagenticBattle},
+    { id: "marble-maze", name: "Marble Maze",  image: marbleMazeImage },
+    { id: "marble-match", name: "Marble Match",  image: marbleMatchImage },
+    { id: "mem-cups", name: "Mem Cups",  image: memCupsImage },
+    { id: "number-in-sequence", name: "Number in Sequence",  image: numberSequenceImage },
+    { id: "pennys-game", name: "Penny's Game",  image: pennyGameImage },
+    { id: "sling-battle", name: "Sling Battle",  image: slingBattleImage },
+    { id: "ultimate-balance", name: "Ultimate Balance",  image: ultimateBalanceImage },
+    { id: "basketball-challenge", name: "Basketball Challenge",  image: basketBallImage },
+    { id: "cup-stacking", name: "Cup Stacking",  image: cupStackingImage },
 ];
 
 function SpotEvents() {

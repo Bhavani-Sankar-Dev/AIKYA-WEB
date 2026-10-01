@@ -80,6 +80,29 @@ function Footer() {
                 </a>
               </div>
             </div>
+
+            <div className="footer-map-panel">
+              <div className="column-heading map-heading">
+                <span className="heading-bracket">&gt;</span> LIVE MAP
+              </div>
+              <div className="map-embed-frame">
+                <iframe
+                  title="VVIT campus location"
+                  src="https://www.google.com/maps?q=Vasireddy+Venkatadri+Institute+of+Technology,+Nambur,+Guntur,+Andhra+Pradesh+522508&z=14&output=embed"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <a
+                href="https://maps.google.com/?q=Vasireddy+Venkatadri+Institute+of+Technology,+Nambur,+Guntur,+Andhra+Pradesh+522508"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="map-link"
+              >
+                OPEN DIRECTIONS
+              </a>
+            </div>
           </div>
 
           {/* Column 3: Transmission Channels */}

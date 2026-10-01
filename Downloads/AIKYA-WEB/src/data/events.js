@@ -38,7 +38,7 @@ const events = [
     ],
     teamSize: "4 Members",
     prizePool: "Cash Awards + Galactic Trophy + Merit Certificates",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/hzXspM9kcejfjda58",
     image: eventImageThree,
   },
 
@@ -61,7 +61,7 @@ const events = [
     ],
     teamSize: "Individual",
     prizePool: "Cash Awards + Galactic Trophy + Merit Certificates",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/9neeULaDNsHyxGR96",
     image: eventImageOne,
   },
 
@@ -84,7 +84,7 @@ const events = [
       "Participants need to understand the canva and design a poster in the given time.",
     ],
     teamSize: "Individual",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/oz3KsXYdAo9MmAgs5",
     image: eventImageFive,
   },
 
@@ -109,7 +109,7 @@ const events = [
       "The final winner is decided based on the accuracy of the drawing and overall performance."
     ],
     teamSize: "1 - 2 Members",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/uKgpPa1JhKM64x5CA",
     image: eventImageTen,
   },
 
@@ -133,7 +133,7 @@ const events = [
       "Level 3, Rebel Blueprint: Teams study a circuit for 30-40 seconds, then recreate it from memory and answer questions on how it works. Accuracy and speed decide the winner.",
     ],
     teamSize: "2 - 3 Members",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/Rmc6XAYcdQ6syYfAA",
     image: eventImageTwelve,
   },
 
@@ -157,7 +157,7 @@ const events = [
       "Round-3: Decode the Message: Participants decode binary sequences into ASCII characters to reveal hidden messages."
     ],
     teamSize: "Individual",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/MgZXUJeGMddGiVFaA",
     image: eventImageSix,
   },
 
@@ -189,7 +189,7 @@ const events = [
     ],
     teamSize: "3-4 memebers",
     prizePool: "Cash Awards + Galactic Trophy + Merit Certificates",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/YcbJHh1o3qyEJXUm7",
     image: eventImageTwo,
   },
 
@@ -216,7 +216,7 @@ const events = [
     ],
     teamSize: "3 - 4 Members",
     prizePool: "Grand Cash Awards + Galactic Trophy + Incubation Mentorship",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/5eGWpMVnpT5pAZZN9",
     image: eventImageFour,
   },
 
@@ -240,7 +240,7 @@ const events = [
       "Before each move, the player must roll a six-sided die."
     ],
     teamSize: "Individual",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/uzsZaRSscGEj1aKH9",
     image: eventImageSeven,
   },
 
@@ -249,7 +249,7 @@ const events = [
     studentCoordinator: "G.Akshara",
     facultyCoordinator: "Dr.A.Srinag",
     number: 10,
-    name: "Tech Treasure",
+    name: "StarWars: The Escape Room",
     type: "minor",
     day: 2,
     date: "October 6, 2026",
@@ -264,7 +264,7 @@ const events = [
       "Round-3: Duel of the Force: Participants respond to directional attacks (left, up, right, and down), identify patterns, and adapt when the pattern changes.",
     ],
     teamSize: "Individual",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/LKVGDVgts1FUwk5XA",
     image: eventImageEight,
   },
 
@@ -287,7 +287,7 @@ const events = [
       "Round-2: Waveform Generation: Qualified teams receive an input waveform, its parameters, and a block diagram containing different operations or conversions.Teams must apply the operations in the correct order and draw or identify the resulting output waveform."
     ],
     teamSize: "2-3 Members",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/brvDSPGK4nMtxg4q7",
     image: eventImageEleven,
   },
 
@@ -310,7 +310,7 @@ const events = [
       "Level-2: The Dark Side Challenge (2 minutes): Players receive a new target and five or six colored values. They may select only the numbers required, using each selected number at most once.",
     ],
     teamSize: "Individual",
-    registrationLink: "/registration",
+    registrationLink: "https://forms.gle/w9fmecXhktAjXL1S9",
     image: eventImageNine,
   }
 ];

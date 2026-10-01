@@ -28,7 +28,7 @@ function EventGrid() {
             </div>
 
             <Link to="/events" className="view-all-missions-cta">
-              <span>EXPLORE ALL 14 MISSIONS</span>
+              <span>EXPLORE ALL 12 MISSIONS</span>
               <span className="cta-arrow-icon">→</span>
             </Link>
           </div>
@@ -44,8 +44,8 @@ function EventGrid() {
         {/* Bottom Callout Banner */}
         <div className="missions-banner-card">
           <div className="banner-left">
-            <span className="banner-code">MISSION DIRECTORY // 10 SECONDARY TRIALS</span>
-            <h3 className="banner-title">10 Additional Technical Operations Await</h3>
+            <span className="banner-code">MISSION DIRECTORY // 8 SECONDARY TRIALS</span>
+            <h3 className="banner-title">8 Additional Technical Operations Await</h3>
             <p className="banner-desc">
               From Robo Race arenas and rapid Breadboard sprints to Firmware Code Wars and Debug Duels.
             </p>
