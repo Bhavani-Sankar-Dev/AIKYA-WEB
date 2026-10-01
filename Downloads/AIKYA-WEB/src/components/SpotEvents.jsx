@@ -64,10 +64,7 @@ function SpotEvents() {
         >
             <img src={event.image} alt="" loading="lazy" />
             <span className="spot-event-card-caption">
-                <span className="spot-event-card-meta">
-                    <span>DAY 0{event.day}</span>
-                    <span>SPOT EVENT</span>
-                </span>
+                <span className="spot-event-card-meta"></span>
                 <span className="spot-event-card-title">{event.name}</span>
             </span>
         </button>

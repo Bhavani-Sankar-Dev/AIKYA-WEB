@@ -112,11 +112,11 @@ function Footer() {
             </div>
             <div className="social-links-grid">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/iete_vvitu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-btn"
-                aria-label="Instagram Transmission"
+                aria-label="IETE VVIT Instagram"
               >
                 <span className="social-tag">IG</span>
                 <span className="social-name">INSTAGRAM</span>
