@@ -5,7 +5,7 @@ import ballonImage from "../assets/5.png"
 import MagenticBattle from "../assets/6.png"
 import cupStackingImage from "../assets/cup-stacking.png";
 import marbleMazeImage from "../assets/Marble Maze landscape event poster.jpg.jpeg";
-import marbleMatchImage from "../assets/marble-match.png";
+// import marbleMatchImage from "../assets/marble-match.png";
 import memCupsImage from "../assets/mem-cups.png";
 import numberSequenceImage from "../assets/NUMBER IN SEQUENCE landscape poster.jpg.jpeg";
 import pennyGameImage from "../assets/penny-game.png";
@@ -16,7 +16,7 @@ const spotEvents = [
     { id: "blow-ballon", name: "Blow The Balloon",  image: ballonImage },
     { id: "magnetic-battle", name: "Magnetic Battke",  image:  MagenticBattle},
     { id: "marble-maze", name: "Marble Maze",  image: marbleMazeImage },
-    { id: "marble-match", name: "Marble Match",  image: marbleMatchImage },
+    // { id: "marble-match", name: "Marble Match",  image: marbleMatchImage },
     { id: "mem-cups", name: "Mem Cups",  image: memCupsImage },
     { id: "number-in-sequence", name: "Number in Sequence",  image: numberSequenceImage },
     { id: "pennys-game", name: "Penny's Game",  image: pennyGameImage },

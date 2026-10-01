@@ -175,7 +175,7 @@ const events = [
     date: "October 6, 2026",
     time: "09:00 AM - 1:00 PM",
     venue: "Honesty block,Seminar Hall",
-    category: "Technical",
+    category: "Non-Technical",
     description: "Holocron Hunt is a team-based treasure hunt inspired by the Star Wars universe. Teams receive a starting clue that leads them to a specific location and volunteer. By solving a series of five hidden clues, teams collect letters that must be arranged to form a final word revealing the treasure's location. The first team to locate the treasure wins.",
     objective: "Develop logical thinking and problem-solving skills.",
     rules: [
@@ -302,7 +302,7 @@ const events = [
     date: "October 6, 2026",
     time: "10:00AM - 12:00PM",
     venue: "ECE block(N-302)",
-    category: "Non-Technical",
+    category: "Technical",
     description: "Duel of Numbers is a one-versus-one mathematical challenge in which participants decode hidden numbers represented by colors and use mathematical operations to reach a specified target. The event consists of two levels of increasing difficulty, testing numerical reasoning, arithmetic accuracy, and speed.",
     objective: "Improve mathematical and numerical reasoning skills.",
     rules: [
